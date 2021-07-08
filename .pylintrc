@@ -1,0 +1,13 @@
+[MESSAGES CONTROL]
+# C0111: missing-docstring
+# R0903: too-few-public-methods
+# W1203: logging-fstring-interpolation
+# W1202: logging-format-interpolation
+# W0703: Catching too general exception Exception (broad-except)
+disable=C0111, R0903, W1203, W1202, W0703
+max-line-length=120
+
+[SIMILARITIES]
+
+# Minimum lines number of a similarity.
+min-similarity-lines=35

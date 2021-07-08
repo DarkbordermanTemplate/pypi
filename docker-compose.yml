@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  pypi:
+    container_name: pypi
+    image: stevearc/pypicloud:1.2.4
+    restart: always
+    ports:
+      - 9999:9999
+    volumes:
+      - ./config.ini:/etc/pypicloud/config.ini
+      - pypi_data:/tmp
+
+volumes:
+  pypi_data:
+    name: pypi_data
